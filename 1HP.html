@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>TNC</title>
+    <link href='https://fonts.googleapis.com/css?family=Playfair%20Display' rel='stylesheet'>
+    <style>
+      body {
+        background-color: black;
+        font-family: 'Playfair Display';
+        color: white;
+        text-align: center;
+      }
+      .custom-button {
+        background-color: Silver;
+        padding: 2.5px;
+        margin-top: 7px;
+        display: block;
+        width: 40%;
+        border: none;
+        font-size: 30px;
+        cursor: pointer;
+        font-family: 'Playfair Display';
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <img src="animation2.gif" style="width: 100%">
+    <p><br></p>
+    <p style="font-size: 90px"><b>Welcome to Hadehaha and Supremer's Memories</b></p>
+    <p style="font-size: 70px">Dedicated to Alex (a.k.a. Hadehaha)</p>
+    <p style="font-size: 60px">Click the button below to go to a randomly selected page: <br><br></p>
+    <button class="custom-button" onclick="chooseRandomPage()">Go to a Random Page</button>
+    <script>
+      function chooseRandomPage() {
+        var pages = [
+          "https://loxingle.github.io/JNC/COWBOY.html",
+          "https://loxingle.github.io/JNC/STARFRIEND.html",
+          "https://loxingle.github.io/JNC/ALEX9.html",
+          "https://loxingle.github.io/JNC/DINODOG.html",
+          "https://loxingle.github.io/JNC/DEPRESSEDBOAR.html",
+          "https://loxingle.github.io/JNC/SNAKE.html",
+          "https://loxingle.github.io/JNC/CATFIGHT.html",
+          "https://loxingle.github.io/JNC/YEHA.html",
+          "https://loxingle.github.io/JNC/DINO.html",
+          "https://loxingle.github.io/JNC/DINODOGDOG.html"
+        ];
+        var randomIndex = Math.floor(Math.random() * pages.length);
+        window.location.href = pages[randomIndex];
+      }
+    </script>
+  </body>
+</html>
