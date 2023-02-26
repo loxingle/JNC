@@ -1,1 +1,1 @@
-<a href="1HP.html" rel="import">TNC</a>
+<a href="1HP.html" rel="import">JNC</a>
